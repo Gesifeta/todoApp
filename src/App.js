@@ -6,15 +6,12 @@ import Notes from "./components/notes";
 import Card from "./components/card";
 function App() {
   const [user, setUser]=useState("")
- 
   useEffect(()=>{
     fetch('https://randomuser.me/api/',{credentials: 'omit'}).then((response)=>response.json()).then((data)=>{
     setUser(data)
     }
       )
   },[])
-    
-
   return (
     <>
       <Header/>
