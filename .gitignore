@@ -4,7 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/components/button.js
+/components/notes.js
+/components/input.js
+/components/card.js
+/view/home.js
+/view/login.js
 # testing
 /coverage
 

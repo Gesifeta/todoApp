@@ -1,69 +1,182 @@
-header{
+header {
   width: 100%;
-   padding: 1rem;
-   margin-bottom: 1rem;
-  background-color: #f5ba13;
-  box-shadow: 1px 1px z 3px rgb(0, 0 ,0, .75)
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #06283D;
+  box-shadow: 1px 1px  3px rgb(0, 0, 0, 0.75);
 }
-header h1{
- 
+body {
+  background-color: #d3ebcd;
+}
+.todoContainer {
+  display: grid;
+  direction: row;
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px;
+  margin: 2rem;
+  height: 25rem;
+  direction: column;
+  background-color: #d3ebcd;
+  padding: 1rem;
+}
+.todoContainer h2 {
+  border-bottom-style: solid;
+  border-color: #4413f5;
+}
+.todo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  margin: 2rem 3rem 0 2rem;
+  gap: 2.5rem;
+  width: 80%;
+}
+.todoContainer button {
+  border-radius: 5px;
+  width: 60%;
+  height: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  margin-right: 4rem;
   color: white;
+  background-color: #4413f5;
+}
+.todo-item-list {
+  color: white;
+  width: "60%";
+}
+.todoContainer textarea {
+  border-style: unset;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  float: right;
+  background-color: #fff;
+
+  line-height: 1.5;
+  letter-spacing: 0.12rem;
+  padding: 1rem;
+}
+.btnRemove {
+  position: absolute;
+  right: -35px;
+  margin-top: -85px;
+  border-radius: 50%;
+  padding: 7px;
+  font-size: larger;
+  width: 60px;
+  height: 60px;
+}
+.todolist {
+  position: relative;
+  display: flex;
+  margin: 2rem;
+  padding: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  font-style: italic;
+  border-top-right-radius: 30px;
+  border-style: dashed;
+  background-color: #d3ebcd;
+  border-color: #f5ba13;
+  color: rgb(8, 106, 235);
+  transition: all todolist 2s ease-in linear;
+}
+.column-direction {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-.notes{
-
+header h1 {
+  color: rgb(255, 255, 255);
+}
+button {
+  padding: 0.5rem;
+  margin: 2rem 0 0 4rem;
+  background-color: rgb(211, 199, 205);
+  font-weight: bold;
+  columns: #000;
+  border-style: unset;
+}
+.notes {
   margin-left: 2.5rem;
   background-color: rgb(251, 253, 247);
   border-radius: 5px;
   padding: 1rem;
   float: left;
-  
- 
 }
-.notes h2{
-border-bottom-style: solid;
-border-color: rgb(184, 18, 101);
+.notes h2 {
+  border-bottom-style: solid;
+  border-color: rgb(184, 18, 101);
   font-style: bold;
-
 }
-.notes p{
-  color:#413f3f ;
+.notes p {
+  color: #413f3f;
   font-style: italic;
 }
-footer{
-  position: absolute;
+footer {
+  
   width: 100%;
   text-align: center;
   padding: 2rem;
   bottom: 0;
-  background-color: #f5ba13;
+  color: #fff;
+  background-color: #06283D;
 }
-section{
+section {
   color: rgb(83, 53, 138);
   margin-left: 2rem;
   width: 400px;
   padding: 1rem;
   float: left;
-  box-shadow: 0 2px 3px rgba(0,0,0, .75);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.75);
 }
-section h3 h4{
+section h3 h4 {
   color: black;
 }
-section img{
+section img {
   border-radius: 50%;
   margin: 2rem;
 }
-section button{
-  background-color: rgb(184, 18, 101);
+section button {
+  background-color: rgb(211, 199, 205);
   width: 100px;
   height: 50px;
-   border-style:unset;
-   border-radius: 5px;
-   font-size: large;
-   font-weight: bold;
-   cursor: pointer;
-   margin-left: 9rem;
+  border-style: unset;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 9rem;
 }
-button:hover{
-  background-color: rgb(212, 100, 156);
+button:hover {
+  background-color: rgb(155, 122, 139);
+}
+.login {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 40%;
+  margin: auto;
+}
+
+.login label,
+input {
+  width: 100%;
+  margin: 0.5rem;
+  height: 50px;
+}
+.loginButton {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+  width: 60%;
+  margin: auto;
+}
+@keyframes todolist {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-55deg);
+  }
+  
 }

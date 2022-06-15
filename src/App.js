@@ -1,21 +1,26 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 import "./App.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Notes from "./components/notes";
-import Card from "./components/card";
+
+import TodoList from "./components/todo";
 function App() {
-  const [user, setUser]=useState("")
-  useEffect(()=>{
-    fetch('https://randomuser.me/api/',{credentials: 'omit'}).then((response)=>response.json()).then((data)=>{
-    setUser(data)
-    }
-      )
-  },[])
+  // const isLogedin=true;
+  // console.log(isLogedin);
+  // const [user, setUser]=useState("")
+  // useEffect(()=>{
+  //   fetch('https://randomuser.me/api/',{credentials: 'omit'}).then((response)=>response.json()).then((data)=>{
+  //   setUser(data)
+  //   }
+  //     )
+  // },[])
+  
   return (
     <>
-      <Header/>
-     <Notes/>
+    <Header/>
+      <TodoList/>
+{/* {!isLogedin?<Login/>:<Home/>} */}
+     {/* <Notes/>
       {user?.results?.map(data=>(
 <Card key={data.login.uuid} title={data.name.title}
 firstName={data.name.first}
@@ -29,8 +34,8 @@ gender={data.gender}
   telephone={data.phone}
 />
       ))}
- 
-      <Footer/>
+ */}
+      <Footer/> 
     </>
   );
 }
