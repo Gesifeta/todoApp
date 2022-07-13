@@ -114,7 +114,7 @@ button {
   font-style: italic;
 }
 footer {
-  
+  position:fixed;
   width: 100%;
   text-align: center;
   padding: 2rem;
