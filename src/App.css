@@ -64,6 +64,7 @@ body {
   padding: 7px;
   font-size: larger;
   width: 60px;
+  cursor:pointer;s
   height: 60px;
 }
 .todolist {
