@@ -151,6 +151,7 @@ section button {
 }
 button:hover {
   background-color: rgb(155, 122, 139);
+  cursor:pointer;
 }
 .login {
   display: grid;
